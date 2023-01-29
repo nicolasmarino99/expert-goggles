@@ -11,13 +11,13 @@ export interface IProductsContextType {
 };
 
 export enum productTypes {
-    SHOW_CATEGORIES = "SHOW_PRODUCTS",
+    FILTER_PRODUCT = "FILTER_PRODUCT",
     TAKE_PRODUCT = "TAKE_PRODUCT",
-    DEL_CATEGORY = "DEL_CATEGORY",
-    GET_PRODUCT= "GET_PRODUCT"
+    SHOW_PRODUCTS = "SHOW_PRODUCTS",
 }
 
 export type actionProductsReducer = {
-type: productTypes;
-name: string;
+    type: productTypes;
+    name: string;
+    filter: string;
 };

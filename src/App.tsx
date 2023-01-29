@@ -6,8 +6,10 @@ import Filter from "./components/Filter/Filter";
 function App() {
   return (
     <div className="App">
-      <h1>"Alternova shop"</h1>
-      <Filter />
+      <div>
+        <h1>"Alternova shop"</h1>
+        <Filter />
+      </div>
       <section>
         <Products />
         <CartList />
