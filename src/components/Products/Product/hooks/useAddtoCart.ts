@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import { ICart } from "../../../../@types/cart";
 import { ClickhandlerType } from "../../../../@types/global";
 import { IProduct } from "../../../../@types/products";
 import CartContext from "../../../../contexts/Cart/cartContext";

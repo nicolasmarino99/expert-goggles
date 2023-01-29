@@ -9,32 +9,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.1",
     "@types/axios": "^0.14.0",
     "@types/bootstrap": "^5.2.6",
-    "@types/react-redux": "^7.1.25",
-    "@types/react-transition-group": "^4.4.5",
-    "@types/redux-logger": "^3.0.9",
-    "@types/redux-saga": "^0.10.5",
     "axios": "^1.2.6",
     "boostrap": "^2.0.0",
     "bootstrap-sass": "^3.4.3",
-    "https": "^1.0.0",
-    "i18next": "^22.4.9",
-    "i18next-browser-languagedetector": "^7.0.1",
     "json-loader": "^0.5.7",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
-    "react-i18next": "^12.1.4",
-    "react-redux": "^8.0.5",
-    "redux": "^4.2.0",
-    "redux-logger": "^3.0.6",
-    "redux-saga": "^1.2.2",
-    "reselect": "^4.1.7",
     "sass": "^1.57.1",
-    "styled-components": "^5.3.6",
-    "write-json-file": "^5.0.0"
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@types/jest": "^29.4.0",

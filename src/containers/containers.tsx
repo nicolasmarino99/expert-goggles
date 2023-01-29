@@ -8,7 +8,7 @@ export const ProductsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   max-width: 38%;
-  max-height: 90vh;
+  max-height: 94vh;
   justify-content: center;
   overflow: overlay;
   @media only screen and (max-width: 812px) {
@@ -26,7 +26,7 @@ export const ListContainer = styled.div`
   width: 70%;
   flex-direction: column;
   justify-content: space-between;
-  max-height: 90vh;
+  max-height: 94vh;
   overflow: overlay;
   @media only screen and (max-width: 812px) {
     width: 100%;
