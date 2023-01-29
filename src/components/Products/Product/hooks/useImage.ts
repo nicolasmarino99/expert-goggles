@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { searchPhoto } from '../../../api/services/apicalls';
+import { searchPhoto } from '../../../../api/services/apicalls';
 
 export const useImage = (name: string) => {
   const [image, setImage] = useState("");

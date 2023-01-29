@@ -1,35 +1,14 @@
-import { useContext } from "react";
-import "./App.css";
-import { CardContainer, ListContainer } from "./containers/containers";
-import Product from "./components/Product/Product";
-import { IProduct } from "./@types/products";
-import ProductsContext from "./contexts/Products/productsContext";
-import CartContext from "./contexts/Cart/cartContext";
-import Item from "./components/Cartlist/Item";
+import "./App.scss";
+import Products from "./components/Products/Products";
+import CartList from "./components/Cartlist/Carlist";
 
 function App() {
-  const productCtx = useContext(ProductsContext);
-  const cartCtx = useContext(CartContext);
   return (
     <div className="App">
       <h1>"Alternova shop"</h1>
       <section>
-        <CardContainer>
-          {productCtx?.products?.map((products: IProduct, id) => (
-            <Product {...products} key={id} />
-          ))}
-        </CardContainer>
-        <ListContainer>
-          <div>
-            {cartCtx?.carts.map((cart, id) => (
-              <Item {...cart} key={id} />
-            ))}
-          </div>
-          <div>
-            <button>total order price</button>
-            <button>Create order</button>
-          </div>
-        </ListContainer>
+        <Products />
+        <CartList />
       </section>
     </div>
   );

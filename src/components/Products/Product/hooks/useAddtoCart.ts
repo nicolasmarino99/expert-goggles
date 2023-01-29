@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { ICart } from "../../../@types/cart";
-import { ClickhandlerType } from "../../../@types/global";
-import { IProduct } from "../../../@types/products";
-import CartContext from "../../../contexts/Cart/cartContext";
-import ProductsContext from "../../../contexts/Products/productsContext";
+import { ICart } from "../../../../@types/cart";
+import { ClickhandlerType } from "../../../../@types/global";
+import { IProduct } from "../../../../@types/products";
+import CartContext from "../../../../contexts/Cart/cartContext";
+import ProductsContext from "../../../../contexts/Products/productsContext";
 
 interface Reference {
   ref: React.RefObject<HTMLInputElement>,
