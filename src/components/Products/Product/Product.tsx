@@ -1,4 +1,5 @@
-import { FC, useRef } from "react";
+import { FC, useRef, useState } from "react";
+import { Alert, Button, Fade } from "react-bootstrap";
 import { IProduct } from "../../../@types/products";
 import {
   ControlsWrapper,
@@ -12,13 +13,21 @@ const Product: FC<IProduct> = (props) => {
   const ref = useRef<HTMLInputElement>(null);
   const handleClick = useAddtoCart({ ref, ...props });
   const image = useImage(name);
+  console.log(open);
   return (
     <ProductWrapper>
-      <h3 ref={ref}>{name}</h3>
+      <h5 ref={ref}>{name}</h5>
       <img src={image} alt="product image" />
       <ControlsWrapper>
         <span>{stock}</span>
-        <button onClick={handleClick}>Add to cart</button>
+        {stock === 0 && (
+          <div className="animation">
+            <Alert show={true} key={"danger"} variant={"danger"}>
+              The product {name} is out of stock
+            </Alert>
+          </div>
+        )}
+        <Button onClick={handleClick}>Add to cart</Button>
       </ControlsWrapper>
     </ProductWrapper>
   );

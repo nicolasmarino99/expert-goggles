@@ -15,11 +15,13 @@ export const ProductsContainer = styled.div`
     max-width: 28em;
     max-height: 32em;
   }
+  padding: 2em;
 `;
 
 export const ListContainer = styled.div`
   display: flex;
-  background: blue;
+  padding: 2em;
+  background: #2d2d42;
   color: white;
   width: 70%;
   flex-direction: column;

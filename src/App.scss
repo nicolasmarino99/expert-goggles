@@ -1,3 +1,5 @@
+// @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
 #root {
   text-align: center;
 }
@@ -16,16 +18,10 @@
 
 @keyframes logo-spin {
   from {
-    transform: rotate(0deg);
+    opacity: 1;
   }
   to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+    opacity: 0;
   }
 }
 
@@ -56,4 +52,13 @@ img {
         height: 54%;
       }
     }
+}
+
+.animation {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+  animation: logo-spin 3s ease-in-out;
+  opacity: 0;
+  
 }

@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Button } from "react-bootstrap";
 import {
   ListContainer,
   ItemsContainer,
@@ -19,14 +20,14 @@ const CartList = () => {
         ))}
       </ItemsContainer>
       <OrdersWrapper>
-        <button
+        <Button
           onClick={generateJSONBill("total-price.json", cartCtx?.carts, true)}
         >
           total order price
-        </button>
-        <button onClick={generateJSONBill("bill.json", cartCtx?.carts)}>
+        </Button>
+        <Button onClick={generateJSONBill("bill.json", cartCtx?.carts)}>
           Create order
-        </button>
+        </Button>
       </OrdersWrapper>
     </ListContainer>
   );
