@@ -9,7 +9,7 @@ const Product: FC<IProduct> = (props) => {
   const handleClick = useAddtoCart({ ref, ...props });
   const image = useImage(name);
   return (
-    <div>
+    <div style={{ width: "14em" }}>
       <h3 ref={ref}>{name}</h3>
       <img src={image} alt="product image" />
       <div>

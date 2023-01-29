@@ -1,9 +1,5 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
-  display: flex;
 }
 
 .logo {
@@ -43,4 +39,10 @@
 
 section {
   display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 50%;
+  height: 50%;
 }

@@ -10,7 +10,6 @@ import Item from "./components/Cartlist/Item";
 function App() {
   const productCtx = useContext(ProductsContext);
   const cartCtx = useContext(CartContext);
-  console.log(productCtx?.products);
   return (
     <div className="App">
       <h1>"Alternova shop"</h1>
@@ -21,9 +20,15 @@ function App() {
           ))}
         </CardContainer>
         <ListContainer>
-          {cartCtx?.carts.map((cart, id) => (
-            <Item {...cart} key={id} />
-          ))}
+          <div>
+            {cartCtx?.carts.map((cart, id) => (
+              <Item {...cart} key={id} />
+            ))}
+          </div>
+          <div>
+            <button>total order price</button>
+            <button>Create order</button>
+          </div>
         </ListContainer>
       </section>
     </div>
