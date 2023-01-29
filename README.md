@@ -1,2 +1,10 @@
 # expert-goggles
-Alternovatest
+
+For running
+
+`npm run dev`
+
+TechStack:
+
+- typescript
+- vite with swc
