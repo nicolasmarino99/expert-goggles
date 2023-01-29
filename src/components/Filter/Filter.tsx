@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import ProductsContext from "../../contexts/Products/productsContext";
 

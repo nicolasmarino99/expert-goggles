@@ -1,10 +1,11 @@
-import { FC, useRef, useState } from "react";
+import { FC, useRef } from "react";
 import { Alert, Button } from "react-bootstrap";
 import { IProduct } from "../../../@types/products";
 import {
   ControlsWrapper,
   ProductWrapper,
 } from "../../../containers/containers";
+import AlertComponent from "../Alert";
 import useAddtoCart from "./hooks/useAddtoCart";
 import { useImage } from "./hooks/useImage";
 
@@ -20,11 +21,10 @@ const Product: FC<IProduct> = (props) => {
       <ControlsWrapper>
         <span>{stock}</span>
         {stock === 0 && (
-          <div className="animation">
-            <Alert show={true} key={"danger"} variant={"danger"}>
-              The product {name} is out of stock
-            </Alert>
-          </div>
+          <AlertComponent
+            text={`The product ${name} is out of stock`}
+            type="danger"
+          />
         )}
         <Button onClick={handleClick}>Add to cart</Button>
       </ControlsWrapper>

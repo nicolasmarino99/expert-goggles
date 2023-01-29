@@ -1,7 +1,7 @@
 import { ICart } from "../@types/cart";
 
-export const generateJSONBill = (filename: string, bill: ICart[] | undefined, withTotal = false) => 
-  () => {
+export const generateJSONBill = (filename: string, bill: ICart[] | undefined, withTotal = false) => {
+  
     let total: number
     let json;
     const {stringify, parse} = JSON
